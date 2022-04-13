@@ -1,143 +1,37 @@
+<!DOCTYPE HTML>
 <html>
-	<body onload="get_time()">
-		<center>
-			<h1 style="text-align:center;color: green">An examination</h1>
-			<h2 style="text-align:center">五道关于《三国演义》的测试题</h2>
-		</center>
-		</br>
-		<form>
-			<p>1.( )曾经想以献宝为借口，想乘机除掉董卓。</p>
-			<p>
-	  			<input type="radio" name="T1" value="1">王允</br>
-	  			<input type="radio" name="T1" value="2">何进</br>
-	  			<input type="radio" name="T1" value="3">曹操</br>
-	  			<input type="radio" name="T1" value="4">郭汜</br>
-	  		</p>
-	  		<p>2.( )用辕门射箭一计使刘备与袁术两家和解。</p>
-			<p>
-	  			<input type="radio" name="T2" value="1">孙策</br>
-	  			<input type="radio" name="T2" value="2">吕布</br>
-	  			<input type="radio" name="T2" value="3">曹操</br>
-	  			<input type="radio" name="T2" value="4">公孙瓒</br>
-	  		</p>
-	  		<p>3.张飞在长坂坡吓死了( )。</p>
-			<p>
-	  			<input type="radio" name="T3" value="1">曹仁</br>
-	  			<input type="radio" name="T3" value="2">夏侯惇</br>
-	  			<input type="radio" name="T3" value="3">夏侯杰</br>
-	  			<input type="radio" name="T3" value="4">夏侯和</br>
-	  		</p>
-	  		<p>4.“垂手过膝，目能顾其耳。”描写的是( )。</p>
-			<p>
-	  			<input type="radio" name="T4" value="1">刘备</br>
-	  			<input type="radio" name="T4" value="2">庞统</br>
-	  			<input type="radio" name="T4" value="3">诸葛亮</br>
-	  			<input type="radio" name="T4" value="4">姜维</br>
-	  		</p>
-	  		<p>5.曹操中了周瑜之计误斩了水师都督( )。(多选)</p>
-			<p>
-	  			<input type="checkbox" name="T5" value="1">蔡瑁</br>
-	  			<input type="checkbox" name="T5" value="2">张郃</br>
-	  			<input type="checkbox" name="T5" value="3">张允</br>
-	  			<input type="checkbox" name="T5" value="4">于禁</br>
-	  		</p>
-	  		<button onclick="calculate()">交卷</button>
-	  	</form>	
-	</body>
-	
-<html>
-<script type="text/javascript">
-	var pre_hour;
-	var pre_second;
-	var pre_minute;
-	var now_hour;
-	var now_second;
-	var now_minute;
-	function get_time(){
-		var date=new Date();
-		pre_hour=date.getHours();
-		pre_minute=date.getMinutes();
-		pre_second=date.getSeconds();
-		var hour=date.getHours();
-		if(hour<=12)
-		{
-			var s1="Good morning!";
-			window.alert(date+"\n"+s1)
-		}
-		else if(hour<=18)
-		{
-			var s2="Good afternoon!";
-			window.alert(date+"\n"+s2)
-		}
-		else if(hour>18)
-		{
-			var s3="Good evening!";
-			window.alert(date+"\n"+s3)
-		}
-	}
-	function calculate(){
-		var date=new Date();
-		now_hour=date.getHours();
-		now_minute=date.getMinutes();
-		now_second=date.getSeconds();
-		var hour=now_hour-pre_hour;
-		var minute=now_minute-pre_minute;
-		var second=now_second-pre_second;
-		if(second<0)
-		{
-			second+=60;
-			minute--;
-		}
-		if(minute<0)
-		{
-			minute+=60;
-			hour--;
-		}
-		var score=0;
-		var ans=[3,2,3,1,1,3];
-		var sum=[];
-		var question=["T1","T2","T3","T4","T5"];
-		for(var i=0;i<4;i++){
-			var res=document.getElementsByName(question[i]);
-			for(var j=0;j<res.length;j++)
-			{
-				if(res[j].checked)
-				{
-					sum[i]=res[j].value;
-				}
-			}
-		}
-		for(var i=0;i<4;i++)
-		{
-			if(ans[i]==sum[i])
-			{
-				score+=20;
-			}
-		}
-		var last=document.getElementsByName("T5");
-		var flag=1;
-		var temp=0;
-		for(var i=0;i<last.length;i++)
-		{
-			if(last[i].checked)
-			{
-				var x=last[i].value;
-				if(x==2||x==4)
-				{
-					flag=0;
-				}
-				if(x==1||x==3)
-				{
-					temp+=10;
-				}
-			}
-				
-		}
-		if(flag==0)
-		{
-			temp=0;
-		}
-		score+=temp;
-		alert("您的用时为 "+hour+":"+minute+":"+second+"\n"+"您的得分是： "+score)
-	}
-</script>
+<head>
+<meda charset="utf-8">
+<title>Lmz</title>
+<style type="text/css">
+img.pos_abs
+{
+position:absolute;
+left:347px;
+top:142px
+}
+</style>
+</head>
+<body bgcolor="#E0FFFF">
+<h1 style="text-align:center;color: purple">Lmz</h1>
+<p style="text-align:center"><del>ACM蒟蒻</del></p>
+<p>
+<img class="pos_abs" border="0" src="BIT80.jpg" alt="BIT 80" align ="center" width="900" height="450">
+</p>
+<br />
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=5351096601&auto=1&height=430"></iframe>
+<br />
+<p>
+<big style="color: green">细节决定成败</big>
+</p>
+<br />
+<a href="http://luogu.com.cn/" target="_blank">洛谷</a>
+<br />
+<a href="http://www.qdacm.com/" target="_blank">A.F.O</a>
+<p>
+<a href="http://www.codeforces.com/" target="_blank">
+<img border="0" src="cf.jpg" width="100" height="100" />
+</a>
+</p>
+</body>
+</html>
