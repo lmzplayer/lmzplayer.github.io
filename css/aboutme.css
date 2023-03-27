@@ -72,7 +72,7 @@ h1.Title {
 	color: DodgerBlue;
 	background-color: transparent;
 	margin-left: 150px;
-	font-size:80px;
+	font-size:60px;
 }
 
 p.inform {
@@ -97,7 +97,7 @@ p.inform {
 
 div.link {
 	text-align: center;
-	width: 100%;
+	width: 30%;
 }
 
 div.link a {
@@ -147,6 +147,16 @@ img {
 	margin-top: 50px;
 }
 
+.word {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	border:5px double #888888;
+	border-radius: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 50px;
+}
+
 .inner {
 	background-color: transparent;
 	margin-left: 100px;
@@ -154,6 +164,19 @@ img {
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
+
+.btn1 {
+	background-color: Transparent;
+	width: 50px;
+	border: none;
+}
+
+.btn2 {
+	background-color: Transparent;
+	width: 50px;
+	border: none;
+}
+
 
 a:link {
 	text-decoration: none;
