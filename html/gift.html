@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Graduation To Sabrina!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../image/bg_new.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        #return {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 50px;
+        }
+
+        .text {
+            font-family: 'fangsong';
+            display: inline-block;
+            position: relative;
+            font-size: 40px;
+            height: 60px;
+            line-height: 60px;
+            color: rgb(0, 0, 0);
+        }
+
+        .text::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;     
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+        
+        .text1 {
+            font-family: 'fangsong';
+            display: inline-block;
+            position: relative;
+            font-size: 40px;
+            height: 60px;
+            line-height: 60px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text1::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;     
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+        
+        .text2 {
+            font-family: 'fangsong';
+            display: inline-block;
+            position: relative;
+            font-size: 40px;
+            height: 60px;
+            line-height: 60px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text2::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;     
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+        
+        .text3 {
+            font-family: 'fangsong';
+            display: inline-block;
+            position: relative;
+            font-size: 40px;
+            height: 60px;
+            line-height: 60px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text3::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;     
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+        
+        .text4 {
+            font-family: 'fangsong';
+            display: inline-block;
+            position: relative;
+            font-size: 40px;
+            height: 60px;
+            line-height: 60px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text4::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;     
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+        
+        @keyframes san {
+            0%,100% {
+                background-color: #000;
+            }
+
+            50% {
+               background-color: transparent;
+            }
+        }
+
+        a:link, a:visited {
+            background-color: #eafa73;
+            color: #000000;
+            padding: 14px 25px;
+            text-align: center; 
+            text-decoration: none;
+            display:inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: #eafa73;
+        }
+    </style>
+</head>
+<body onclick="play()">
+    <audio src="../music/bg_music.mp3" id="bg" loop="true"></audio>
+    <audio src="../music/keyboard.m4a" id="ano" loop="true"></audio>
+    <script>
+        function play() {
+                var mus1=document.getElementById("bg");
+                mus1.play();
+                var mus2=document.getElementById("ano");
+                mus2.play();
+            }
+    </script>
+    <div class="all">
+        <h1>
+            <span class="text" ></span>
+        </h1>
+        <script>
+            const text = document.querySelector('.text');
+            const txt = ["To Sabrina: "]; 
+            var index = 0;
+            var huan = true;
+            setInterval(function(){
+                if(index>=0 && index<11)
+                {
+                    text.innerHTML = txt[0].slice(0,index+1);
+                    console.log(index);
+                }
+                if(index>=11 && index<154)
+                {
+                    ;
+                }
+                if(index>=154 && index<165)
+                {
+                    text.innerHTML = txt[0].slice(0,164-index);
+                    console.log(index);
+                }
+                index++;
+                if(index>=165)
+                {
+                    index-=165;
+                }
+            },165)
+        </script>
+        <h1>
+            <span class="text1" ></span>
+        </h1>
+        <script>
+            const text1 = document.querySelector('.text1');
+            const txt1 = ["2024.6.7,光阴又迈着步子向前走了一点。"]; 
+            var index1 = 0;
+            var huan1 = true;
+            setInterval(function(){
+                if(index1>=0 && index1<11)
+                {
+                    ;
+                }
+                if(index1>=11 && index1<34)
+                {
+                    text1.innerHTML = txt1[0].slice(0,index1-10);
+                    console.log(index1);
+                }
+                if(index1>=34 && index1<131)
+                {
+                    ;
+                }
+                if(index1>=131 && index1<154)
+                {
+                    text1.innerHTML = txt1[0].slice(0,153-index1);
+                    console.log(index1);
+                }
+                if(index1>=154 && index1<165)
+                {
+                    ;
+                }
+                index1++;
+                if(index1>=165)
+                {
+                    index1-=165;
+                }
+            },165)
+        </script>
+        <h1>
+            <span class="text2" ></span>
+        </h1>
+        <script>
+            const text2 = document.querySelector('.text2');
+            const txt2 = ["大学毕业，愿你扬帆起航，走向未来。"]; 
+            var index2 = 0;
+            var huan2 = true;
+            setInterval(function(){
+                if(index2>=0 && index2<34)
+                {
+                    ;
+                }
+                if(index2>=34 && index2<51)
+                {
+                    text2.innerHTML = txt2[0].slice(0,index2-33);
+                    console.log(index2);
+                }
+                if(index2>=51 && index2<114)
+                {
+                    ;
+                }
+                if(index2>=114 && index2<131)
+                {
+                    text2.innerHTML = txt2[0].slice(0,130-index2);
+                    console.log(index2);
+                }
+                if(index2>=131 && index2<165)
+                {
+                    ;
+                }
+                index2++;
+                if(index2>=165)
+                {
+                    index2-=165;
+                }
+            },165)
+        </script>
+        <h1>
+            <span class="text3" ></span>
+        </h1>
+        <script>
+            const text3 = document.querySelector('.text3');
+            const txt3 = ["以梦为马，不负韶华。"];
+            var index3 = 0;
+            var huan3 = true;
+            setInterval(function(){
+                if(index3>=0 && index3<51)
+                {
+                    ;
+                }
+                if(index3>=51 && index3<61)
+                {
+                    text3.innerHTML = txt3[0].slice(0,index3-50);
+                    console.log(index3);
+                }
+                if(index3>=61 && index3<104)
+                {
+                    ;
+                }
+                if(index3>=104 && index3<114)
+                {
+                    text3.innerHTML = txt3[0].slice(0,113-index3);
+                    console.log(index3);
+                }
+                if(index3>=114 && index3<165)
+                {
+                    ;
+                }
+                index3++;
+                if(index3>=165)
+                {
+                    index3-=165;
+                }
+            },165)
+        </script>
+        <h1>
+            <span class="text4" ></span>
+        </h1>
+        <script>
+            const text4 = document.querySelector('.text4');
+            const txt4 = ["未来前程似锦，一路繁花相送!"]; 
+            var index4=0;
+            var huan4 = true;
+            setInterval(function(){
+                if(index4>=0 && index4<61)
+                {
+                    ;
+                }
+                if(index4>=61 && index4<75)
+                {
+                    text4.innerHTML = txt4[0].slice(0,index4-60);
+                    console.log(index4);
+                }
+                if(index4>=75 && index4<90)
+                {
+                    ;
+                }
+                if(index4>=90 && index4<104)
+                {
+                    text4.innerHTML = txt4[0].slice(0,103-index4);
+                    console.log(index4);
+                }
+                if(index4>=104 && index4<165)
+                {
+                    ;
+                }
+                index4++;
+                if(index4>=165)
+                {
+                    index4-=165;
+                }
+            },165)
+        </script>
+        <div id="return">
+            <center>
+                <p><a href="photo.html">Back</a></p>
+            </center>
+        </div>    
+    </div>
+    
+</body>
+</html>
