@@ -1,0 +1,40 @@
+#In {
+    width: 200px;
+}
+
+.total {
+    background: url(../image/bg_new.jpg) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1.0;
+}
+
+.main_part {
+    width: 400px;
+    height: 200px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    text-align: center;    
+}
+
+#enter {
+    width: 80px;
+    border: 0px;
+}
+
+.all {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.5;
+}
