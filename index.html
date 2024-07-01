@@ -1,91 +1,24 @@
 <!DOCTYPE html>
-<html>
-	<meta charset="utf-8">
-	<head>
-		<title>Lmz</title>
-		<link rel="stylesheet" type="text/css" href="./css/aboutme.css">
-	</head>
-	<body>
-		<div class="head">
-			<h1 class="Title">Lmz</h1>
-			<p class="inform">————细节决定成败</p>
-			<div class="links">
-				<div class="link">
-					<p><a href="">个人介绍</a></p>
-				</div>
-				<div class="link">
-					<p><a href="html/english.html">考研</a></p>
-				</div>
-				<div class="link">
-					<p><a href="html/acm.html">竞赛</a></p>
-				</div>
-			</div>
-		</div>
-		<br/>
-		<div class="information">
-			<br/>
-			<h2>个人介绍</h2>
-			<br/>
-			<div class="inner">
-				<p>
-                    北京理工大学大三在读本科生，计算机科学与技术专业，退役ACMer。研究生目标：北京理工大学计算机科学与技术专业学硕。
-                </p>
-			</div>
-			<br/>
-		</div>
-		<div class="prize">
-			<br/>
-			<h2>获奖经历</h2>
-			<br/>
-				<table>
-					<tr>
-						<td>2019CSP-S提高组省一等奖</td>
-					</tr>
-                    <tr>
-						<td>2021信息安全竞赛作品赛国优奖</td>
-					</tr>
-                    <tr>
-						<td>2022蓝桥杯软件类C/C++大学A组国三等奖</td>
-					</tr>
-                    <tr>
-						<td>2022ICPC济南站铜牌(rk112)</td>
-					</tr>
-                    <tr>
-						<td>2022ICPC杭州站铜牌(rk198)</td>
-					</tr>
-				</table>
-			<br/>
-		</div>
-        <div class="contact">
-			<br/>
-			<h2>联系方式</h2>
-			<br/>
-				<table>
-					<tr>
-						<td>Tel:13314626811</td>
-					</tr>
-					<tr>
-						<td>QQ:3277026387</td>
-					</tr>
-                    <tr>
-						<td>微信:lmz13314626811</td>
-					</tr>
-                    <tr>
-						<td>微博:fpx、蒟蒻</td>
-					</tr>
-				</table>
-			<br/>
-		</div>
-		<br/>
-		<br/>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/judge.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/pre.css" />
+    <title>Log In</title>
+</head>
+<body >
+    <div class="total" onclick="play()">
+        <audio src="./music/bg_music.mp3" id="bg" loop="true"></audio>
+        <div class="main_part">
+            <form method="get" action="./html/photo.html" onsubmit="return judge();">
+                <center>
+                    <input type="text" id="In" name="date" value="请输入您的生日" >
+                    <input type="submit" id="enter" value="提交" >
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
